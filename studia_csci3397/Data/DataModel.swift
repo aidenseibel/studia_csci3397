@@ -12,20 +12,26 @@ class DataModel {
     static func sendImageToOpenAI(image: UIImage, completion: @escaping (Bool, Double) -> Void) {
         let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 512, height: 512))
         
-        let api_key : String = "" //api key here for now, definitely not the best practice
-        
+        guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "OPENAI_API_KEY") as? String else{
+            print("API key not found")
+            completion(false, 0.0)
+            return
+        }
         // encodes the image as base64 to be sent over the network
         guard let imageData = resizedImage.jpegData(compressionQuality: 0.5)?.base64EncodedString() else {
+            print("Failed to encode image")
+            completion(false, 0.0)
             return
         }
         
         guard let url = URL(string: "https://api.openai.com/v1/chat/completions") else {
+            print("Invalid URL")
             return
         }
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("Bearer \(api_key)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let jsonBody: [String: Any] = [ 
@@ -36,7 +42,7 @@ class DataModel {
                     "content": [
                         [
                             "type": "text",
-                            "text": "Describe the following image." // prompt
+                            "text": "Create Flashcard for the following image" // prompt
                         ],
                         [
                             "type": "image_url",
@@ -46,7 +52,9 @@ class DataModel {
                         ]
                     ]
                 ]
-            ]
+            ],
+            "max_tokens": 4096
+
         ]
 
         do {
