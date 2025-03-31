@@ -19,6 +19,7 @@
 		17D862BD2D931ECF003D5DE6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862BC2D931ECF003D5DE6 /* DataModel.swift */; };
 		17D862C12D9320F7003D5DE6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 17D862C02D9320F7003D5DE6 /* OpenAI */; };
 		17D862C32D932146003D5DE6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862C22D932146003D5DE6 /* Util.swift */; };
+		ADB263792D99FC5A0007DB36 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		17D862BA2D931CE0003D5DE6 /* CreateStudySetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStudySetView.swift; sourceTree = "<group>"; };
 		17D862BC2D931ECF003D5DE6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		17D862C22D932146003D5DE6 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = studia_csci3397/Secrets.xcconfig; sourceTree = SOURCE_ROOT; };
+		ADB2637A2D9A31600007DB36 /* studia-csci3397-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "studia-csci3397-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +70,12 @@
 		17D862A22D9317FD003D5DE6 /* studia_csci3397 */ = {
 			isa = PBXGroup;
 			children = (
+				ADB2637A2D9A31600007DB36 /* studia-csci3397-Info.plist */,
 				17D862A32D9317FD003D5DE6 /* studia_csci3397App.swift */,
 				17D862B22D93181F003D5DE6 /* Data */,
 				17D862B12D931817003D5DE6 /* Views */,
 				17D862A72D9317FE003D5DE6 /* Assets.xcassets */,
+				ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */,
 				17D862A92D9317FE003D5DE6 /* Preview Content */,
 			);
 			path = studia_csci3397;
@@ -180,6 +185,7 @@
 			files = (
 				17D862AB2D9317FE003D5DE6 /* Preview Assets.xcassets in Resources */,
 				17D862A82D9317FE003D5DE6 /* Assets.xcassets in Resources */,
+				ADB263792D99FC5A0007DB36 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +213,7 @@
 /* Begin XCBuildConfiguration section */
 		17D862AC2D9317FE003D5DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -270,6 +277,7 @@
 		};
 		17D862AD2D9317FE003D5DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -326,15 +334,17 @@
 		};
 		17D862AF2D9317FE003D5DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"studia_csci3397/Preview Content\"";
-				DEVELOPMENT_TEAM = C72D493DTH;
+				DEVELOPMENT_TEAM = FZ5A2D4WW8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "studia-csci3397-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Studia would like to access the camera.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Studia would like to access the photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -357,15 +367,17 @@
 		};
 		17D862B02D9317FE003D5DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"studia_csci3397/Preview Content\"";
-				DEVELOPMENT_TEAM = C72D493DTH;
+				DEVELOPMENT_TEAM = FZ5A2D4WW8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "studia-csci3397-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Studia would like to access the camera.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Studia would like to access the photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
