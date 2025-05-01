@@ -45,11 +45,17 @@ struct HomePage: View {
                         .padding(.vertical, 30)
                     } else {
                         ForEach(studySets) { studySet in
+                            
                             NavigationLink(destination: StudySetView(study_set: studySet)) {
-                                StudySetSubView(study_set: studySet)
+                                StudySetSubView(
+                                    study_set: studySet,
+                                    onDelete: {
+                                        StudySetStorage.shared.deleteStudySet(withId: studySet.id)
+                                        loadStudySets()
+                                    }
+                                )
                             }
                             .buttonStyle(.plain)
-                            
                             Divider()
                         }
                     }

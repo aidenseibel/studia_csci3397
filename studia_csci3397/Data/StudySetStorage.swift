@@ -48,11 +48,10 @@ class StudySetStorage {
         }
     }
     
-    func deleteStudySet(withId id: String) {
+    func deleteStudySet(withId id: UUID) {
         var studySets = getAllStudySets()
-        if let uuid = UUID(uuidString: id){
-            studySets.removeAll { $0.id == uuid }
-            
+            studySets.removeAll { $0.id == id }
+    
             do {
                 let encoder = JSONEncoder()
                 let data = try encoder.encode(studySets)
@@ -60,6 +59,6 @@ class StudySetStorage {
             } catch {
                 print("Error encoding study sets after deletion: \(error.localizedDescription)")
             }
-        }
+        
     }
 }
