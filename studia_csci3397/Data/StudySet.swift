@@ -8,13 +8,13 @@
 import Foundation
 
 
-struct flashcard: Codable, Hashable {
+struct Flashcard: Codable, Hashable {
     var id: UUID = UUID()
 
     var question: String
     var answer: String
     
-    static func == (lhs: flashcard, rhs: flashcard) -> Bool {
+    static func == (lhs: Flashcard, rhs: Flashcard) -> Bool {
         return lhs.id == rhs.id
     }
     
@@ -23,27 +23,25 @@ struct flashcard: Codable, Hashable {
     }
 }
 
-struct study_set: Identifiable, Codable, Hashable {
+struct Study_Set: Identifiable, Codable, Hashable {
     var id: UUID = UUID()
     
     var name: String
     var description: String
     
-    var flashcards: [flashcard]
+    var Flashcards: [Flashcard]
     
     
-    static func == (lhs: study_set, rhs: study_set) -> Bool {
+    static func == (lhs: Study_Set, rhs: Study_Set) -> Bool {
         return lhs.id == rhs.id
     }
     
-    func hash(into hasher: inout Hasher) {
+    func hash(into hasher  : inout Hasher) {
         hasher.combine(id)
     }
+
+
 }
 
 
-var sample_study_sets: [study_set] = [
-    study_set(name: "CSCI 3397", description: "Mobile Apps", flashcards: []),
-    study_set(name: "CSCI 3396", description: "Network Security", flashcards: []),
-    study_set(name: "BAT 3305", description: "Data Science", flashcards: [])
-]
+

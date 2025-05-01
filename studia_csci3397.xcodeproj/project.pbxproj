@@ -15,11 +15,13 @@
 		17D862B52D9318DA003D5DE6 /* StudySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862B42D9318DA003D5DE6 /* StudySet.swift */; };
 		17D862B72D931966003D5DE6 /* StudySetSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862B62D931966003D5DE6 /* StudySetSubView.swift */; };
 		17D862B92D931B01003D5DE6 /* StudySetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862B82D931B01003D5DE6 /* StudySetView.swift */; };
-		17D862BB2D931CE0003D5DE6 /* CreateStudySetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862BA2D931CE0003D5DE6 /* CreateStudySetView.swift */; };
-		17D862BD2D931ECF003D5DE6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862BC2D931ECF003D5DE6 /* DataModel.swift */; };
 		17D862C12D9320F7003D5DE6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 17D862C02D9320F7003D5DE6 /* OpenAI */; };
 		17D862C32D932146003D5DE6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D862C22D932146003D5DE6 /* Util.swift */; };
-		ADB263792D99FC5A0007DB36 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */; };
+		AD1347822DA0CCDA00B7AF1E /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1347812DA0CCCD00B7AF1E /* FlashcardView.swift */; };
+		AD1347842DAF51D300B7AF1E /* FromAICreateStudySetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1347832DAF51C300B7AF1E /* FromAICreateStudySetView.swift */; };
+		AD1347862DAF53DE00B7AF1E /* FromAICreateFlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1347852DAF53D200B7AF1E /* FromAICreateFlashcardViewModel.swift */; };
+		AD13478C2DC304D800B7AF1E /* SaveStudySetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13478B2DC304D300B7AF1E /* SaveStudySetView.swift */; };
+		AD13478E2DC346F400B7AF1E /* StudySetStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13478D2DC346EB00B7AF1E /* StudySetStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +34,12 @@
 		17D862B42D9318DA003D5DE6 /* StudySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySet.swift; sourceTree = "<group>"; };
 		17D862B62D931966003D5DE6 /* StudySetSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetSubView.swift; sourceTree = "<group>"; };
 		17D862B82D931B01003D5DE6 /* StudySetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetView.swift; sourceTree = "<group>"; };
-		17D862BA2D931CE0003D5DE6 /* CreateStudySetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStudySetView.swift; sourceTree = "<group>"; };
-		17D862BC2D931ECF003D5DE6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		17D862C22D932146003D5DE6 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		AD1347812DA0CCCD00B7AF1E /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		AD1347832DAF51C300B7AF1E /* FromAICreateStudySetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromAICreateStudySetView.swift; sourceTree = "<group>"; };
+		AD1347852DAF53D200B7AF1E /* FromAICreateFlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromAICreateFlashcardViewModel.swift; sourceTree = "<group>"; };
+		AD13478B2DC304D300B7AF1E /* SaveStudySetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveStudySetView.swift; sourceTree = "<group>"; };
+		AD13478D2DC346EB00B7AF1E /* StudySetStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetStorage.swift; sourceTree = "<group>"; };
 		ADB263782D99FC5A0007DB36 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = studia_csci3397/Secrets.xcconfig; sourceTree = SOURCE_ROOT; };
 		ADB2637A2D9A31600007DB36 /* studia-csci3397-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "studia-csci3397-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -95,7 +100,9 @@
 				17D862B32D931848003D5DE6 /* Components */,
 				17D862A52D9317FD003D5DE6 /* HomePage.swift */,
 				17D862B82D931B01003D5DE6 /* StudySetView.swift */,
-				17D862BA2D931CE0003D5DE6 /* CreateStudySetView.swift */,
+				AD1347812DA0CCCD00B7AF1E /* FlashcardView.swift */,
+				AD1347832DAF51C300B7AF1E /* FromAICreateStudySetView.swift */,
+				AD13478B2DC304D300B7AF1E /* SaveStudySetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,9 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				17D862B42D9318DA003D5DE6 /* StudySet.swift */,
-				17D862BC2D931ECF003D5DE6 /* DataModel.swift */,
+				AD1347852DAF53D200B7AF1E /* FromAICreateFlashcardViewModel.swift */,
 				17D862C22D932146003D5DE6 /* Util.swift */,
 				17C49D4B2D98E90F004B4D24 /* OpenAIModels.swift */,
+				AD13478D2DC346EB00B7AF1E /* StudySetStorage.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -150,7 +158,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					17D8629F2D9317FD003D5DE6 = {
 						CreatedOnToolsVersion = 15.2;
@@ -185,7 +193,6 @@
 			files = (
 				17D862AB2D9317FE003D5DE6 /* Preview Assets.xcassets in Resources */,
 				17D862A82D9317FE003D5DE6 /* Assets.xcassets in Resources */,
-				ADB263792D99FC5A0007DB36 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,14 +203,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D862BD2D931ECF003D5DE6 /* DataModel.swift in Sources */,
+				AD1347862DAF53DE00B7AF1E /* FromAICreateFlashcardViewModel.swift in Sources */,
+				AD1347822DA0CCDA00B7AF1E /* FlashcardView.swift in Sources */,
+				AD13478C2DC304D800B7AF1E /* SaveStudySetView.swift in Sources */,
+				AD1347842DAF51D300B7AF1E /* FromAICreateStudySetView.swift in Sources */,
 				17D862B92D931B01003D5DE6 /* StudySetView.swift in Sources */,
-				17D862BB2D931CE0003D5DE6 /* CreateStudySetView.swift in Sources */,
 				17D862C32D932146003D5DE6 /* Util.swift in Sources */,
 				17D862A62D9317FD003D5DE6 /* HomePage.swift in Sources */,
 				17D862A42D9317FD003D5DE6 /* studia_csci3397App.swift in Sources */,
 				17D862B72D931966003D5DE6 /* StudySetSubView.swift in Sources */,
 				17D862B52D9318DA003D5DE6 /* StudySet.swift in Sources */,
+				AD13478E2DC346F400B7AF1E /* StudySetStorage.swift in Sources */,
 				17C49D4C2D98E90F004B4D24 /* OpenAIModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

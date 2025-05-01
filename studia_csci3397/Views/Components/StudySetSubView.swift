@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StudySetSubView: View {
     
-    var study_set: study_set
+    var study_set: Study_Set
     
     var body: some View {
         
@@ -18,7 +18,7 @@ struct StudySetSubView: View {
                 Text("\(study_set.name)")
                     .font(.title2)
                 Text("\(study_set.description)")
-                Text("\(study_set.flashcards.count) flashcards")
+                Text("\(study_set.Flashcards.count) flashcards")
             }
             .padding(10)
             
@@ -27,6 +27,4 @@ struct StudySetSubView: View {
     }
 }
 
-#Preview {
-    StudySetSubView(study_set: sample_study_sets[0])
-}
+
